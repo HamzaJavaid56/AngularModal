@@ -1,0 +1,47 @@
+<button class="btn btn-secondary" (click)="ShowBucketModelPopup()">Show Modal</button>
+<!-- Bucket Modal Section -->
+<div class="modal-section">
+  <div class="modal fade modal-splash" id="provider_model" role="dialog">
+    <div class="modal-dialog" role="document" style="min-width:800px;">
+      <div class="modal-right">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="section-heading" style="width: 100%;">
+              <h2 class="pull-left">Modal </h2>
+              <div style="text-align: right;" >
+                <button type="button"  class="close" data-dismiss="modal" aria-label="Close"
+                  (click)="closeBucketModelPopup()">
+                  <i class="app-icon-IconSet-1-12">X</i>
+                </button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row margin-b10">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <div class="has-feedback">
+                    <label for="">Email</label>
+                    <input class="form-control" placeholder="Search Records" type="search">
+                    <span class="form-control-feedback"><i class="blue glyphicon glyphicon-search blue"></i></span>
+                  </div>
+                  <div class="has-feedback">
+                    <label for="">Password</label>
+                    <input class="form-control" placeholder="Search Records" type="search">
+                    <span class="form-control-feedback"><i class="blue glyphicon glyphicon-search blue"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" (click)="closeBucketModelPopup()">Close</button>
+            <button class="btn btn-info" (click)="SetBucketReq()">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
